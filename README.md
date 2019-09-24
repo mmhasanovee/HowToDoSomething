@@ -1,4 +1,4 @@
-# How To Do Something   [![Build Status]()
+# How To Do Something   [![Build Status]()]
 
 A community forum mainly based on basic PHP,AJAX and Javascript.
 
@@ -7,7 +7,7 @@ A community forum mainly based on basic PHP,AJAX and Javascript.
 
 ## Demo/Official Website
 
-* [HowToDoS.epizy.com](http://howtodos.epizy.com/)
+* [howtodos.epizy.com](http://howtodos.epizy.com/)
 
 
 ## Requirements
