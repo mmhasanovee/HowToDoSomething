@@ -1,0 +1,503 @@
+/*****************************************************/
+
+
+/***Search Box****/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+* {
+  font-family: Roboto, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.flexbox {
+  background: linear-gradient(155deg, #55c7ed, #2bb3e0, #3bc1ed);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+
+
+.search > div {
+  display: inline-block;
+  position: relative;
+}
+
+.search > div:after {
+  content: "";
+  background: white;
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  top: 40px;
+  right: 2px;
+  transform: rotate(135deg);
+  box-shadow: 1px 0 #0091c2;
+}
+
+.search > div > input {
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px white;
+  outline: none;
+  border-radius: 35px;
+  box-shadow: 0 1px #0091c2;
+  transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+  color: #efefef;
+  opacity: 1;
+}
+
+.search > div > input::-ms-placeholder {
+  color: #efefef;
+}
+
+.search > div > input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.search > div > input:focus,
+.search > div > input:valid {
+  width: 250px;
+}
+
+/*---------------------------------------------*/
+
+
+/**Google fonts**/
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+/****The buttons****/
+.pure-material-button-contained {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+    margin-bottom: 10px;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+    border: none;
+}
+
+/* Overlay */
+.pure-material-button-contained::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Ripple */
+.pure-material-button-contained::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px; /* Safari */
+    height: 32px; /* Safari */
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+/* Hover, Focus */
+.pure-material-button-contained:hover,
+.pure-material-button-contained:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    color:white;
+}
+
+.pure-material-button-contained:hover::before {
+    opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+    opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+    opacity: 0.3;
+}
+
+/* Active */
+.pure-material-button-contained:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+    opacity: 0.32;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+/* Disabled */
+.pure-material-button-contained:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+    opacity: 0;
+}
+
+
+
+/*---------------------------------------------*/
+
+
+
+
+/****THE Animated Header****/
+
+/*---------------------------------------------*/
+
+
+
+  .headtext {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+/*---------------------------------------------*/
+
+
+
+
+
+
+
+
+/****General****/
+*
+{
+	margin:0px;
+	padding:0px;
+}
+body
+{
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+   background-size: cover;
+	padding-left:10%;
+	padding-right:10%;
+	font-family: 'Livvic', sans-serif;
+}
+a
+{
+	text-decoration:none;
+	color:#333333;
+}
+a:hover
+{
+	color:#000000;
+}
+img, table, tr, td
+{
+	border:0px;
+}
+h1
+{
+	text-align:center;
+	margin:0px;
+	padding:0px;
+}
+.clean
+{
+	clear:both;
+}
+.left
+{
+	text-align:left;
+}
+.center
+{
+	text-align:center;
+}
+input[type=text], input[type=submit], input[type=button], input[type=password]
+{
+	width:150px;
+}
+label
+{
+	width:200px;
+	display:inline-block;
+	vertical-align:top;
+	text-align:left;
+}
+.message_buttons input
+{
+	width:auto;
+	padding:0px 5px;
+}
+.button
+{
+	padding:5px 15px;
+	vertical-align:middle;
+	border:1px solid #aaaaaa;
+	font-weight:bold;
+	background:url('images/button.png') repeat-x;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+}
+table
+{
+	border-spacing:0px;
+	background:#ffffff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:0px;
+	width:95%;
+	margin:5px auto 5px auto;
+}
+tr
+{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin:0px;
+}
+td, th
+{
+	margin:0px;
+	border:0px;
+	padding:3px;
+	text-align:center;
+}
+/*****************************************************/
+/****Blocks****/
+.header
+{
+	margin:auto;
+	margin-top:10px;
+	padding:15px;
+   background-image: linear-gradient(to right top, #111214, #1f1d21, #2e282b, #3e3334, #4c403b);
+  width:60%;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:10px;
+	text-align:center;
+}
+.foot
+{
+	text-align:center;
+	background-color: white;
+	width:60%;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	padding:10px;
+	margin:20px auto;
+}
+.content
+{
+	background-color: orangered;
+	width:85%;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+}
+.box_left
+{
+	float:left;
+}
+.box_right
+{
+	float:right;
+}
+.box
+{
+	background:url('images/bluec_30p.png');
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	margin:auto;
+	padding:5px;
+	margin-bottom:15px;
+}
+.login
+{
+	width:355px;
+	margin:auto;
+	text-align:left;
+}
+.box_login
+{
+	background:url('images/black_40p.png');
+	width:360px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	margin:auto;
+	padding:20px;
+	margin-top:20px;
+	color:#ffffff;
+}
+/*****************************************************/
+/****Content****/
+.big
+{
+	font-size:1.2em;
+}
+.small
+{
+	font-size:0.7em;
+}
+.message
+{
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	padding:20px;
+	margin:auto;
+	width:500px;
+	background-color: orange;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	margin-top:20px;
+}
+.messages_table td
+{
+	border-top:1px solid #cccccc;
+	vertical-align:top;
+}
+.author
+{
+	width:150px;
+	border-right:1px solid #cccccc;
+}
+.title_cell
+{
+	width:45%;
+}
+.date
+{
+	font-style:italic;
+	text-align:right;
+	font-size:0.9em;
+	margin-right:10px;
+}
+.edit
+{
+	float:left;
+}
+.forum_ntop, .forum_nrep, .forum_act, .forum_auth
+{
+	width:100px;
+}
+td.forum_cat, td.forum_tops
+{
+	padding-left:15px;
+	text-align:left;
+}
+.categories_table td, .categories_table th, .topics_table td, .topics_table th, .list_pm td, .list_pm th
+{
+	border-bottom:1px solid #cccccc;
+}
+.categories_table tr:last-child td, .topics_table tr:last-child td, .list_pm tr:last-child td
+{
+	border-bottom:0px;
+}
+td.forum_cat .title
+{
+	font-weight:bold;
+}
+td.forum_cat .description
+{
+	padding-left:5px;
+}
