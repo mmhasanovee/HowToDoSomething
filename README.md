@@ -1,6 +1,5 @@
-# Carbon-Forum    [![Build Status](https://travis-ci.org/lincanbin/Carbon-Forum.svg?branch=develop)](https://travis-ci.org/lincanbin/Carbon-Forum)
+# How To Do Something   [![Build Status]()
 
-#How To Do Something
 A community forum mainly based on basic PHP,AJAX and Javascript.
 
 
@@ -29,15 +28,7 @@ A community forum mainly based on basic PHP,AJAX and Javascript.
 * User panel/Admin panel. They can modify profile.  
 * Admin can add/delete/priority set the category or topic.
 * User can post new topics.
-* Ajax based search box.
-
-
-
-
-## Contributors
-
-[Show all](https://github.com/lincanbin/Carbon-Forum/graphs/contributors)
-
+* Ajax based search box
 
 
 ## License
